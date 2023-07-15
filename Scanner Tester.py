@@ -2,6 +2,14 @@
 
 import socket
 import termcolor
+import art
+from PIL import Image
+
+
+def openArt():
+    text = input("Enter your Leet Hacker Ascii title text: ")
+    ascii_art = art.text2art(text)
+    print(ascii_art)
 
 
 def portScanTCP(host,port):
@@ -34,5 +42,6 @@ def main():
 
 
 if __name__  == "__main__":
+    openArt()
     main()
 
